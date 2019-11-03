@@ -4,13 +4,24 @@ body {
 	max-width: 700px;
 	margin: 10px auto ;
 	border: 20px solid #bdc3c7;
-
 }
+
+.container-fluid {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 p {
 	margin: 10px 5% 10px 5% ;
-	font-color: #c7c0bd;
+	color: #393d41;
 }
 
+h1 {
+	margin: 5%;
+}
 
 h2 {
 	font-weight: 700;
@@ -53,4 +64,16 @@ p>img {
 }
 .para {
 	font-size: 20px;
+}
+
+.para a {
+	text-decoration: none;
+	color: blue;
+}
+.para a:hover {
+	color: rgb(9, 85, 110);
+	text-decoration: underline;
+}
+.para a:visited {
+	color: rgb(35, 126, 156);
 }
