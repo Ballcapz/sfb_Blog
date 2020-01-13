@@ -37,9 +37,30 @@ main, header, section, aside, footer {
 
 .content {
     flex: 1;
-    background-color: #129a22;
+    color: black;
+/*     background-color: #129a22; */
 }
-
+.content .project {
+    width: 90%;
+    height: 50vh;
+    color: black;
+    border: 1px solid black;
+    margin: 1em auto;
+}
+.content .project img {
+    width: 100%;
+    height: 80%;
+}
+.content .project a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 100%;
+}
+.content .project h4 {
+    text-align: right;
+    margin: 2%;
+}
 .sidebar {
     flex: 0 1 300px;
     border: 1px solid #000000;
@@ -47,8 +68,17 @@ main, header, section, aside, footer {
 }
 
 .footer {
-    border: 1px solid #000000;
-    background-color: #616161;
+    margin-top: 2em;
+    border-top: 1px solid black;
+    color: black;
+
+    text-align: center;
+}
+.footer a {
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #03a9f4;
 }
 
 @media screen and (min-width: 640px) {
@@ -60,11 +90,21 @@ main, header, section, aside, footer {
         margin-top: 1%;
         max-width: 20%;
     }
+    .content .project {
+        width: 70%;
+    }
 }
 
 @media screen and (min-width: 1021px) {
     .flex-container {
         min-height: 75vh;
+    }
+    
+    .content .project {
+        width: 45%;
+        float: left;
+        margin-right: 1em;
+        margin-left: 1em;
     }
 }
 
